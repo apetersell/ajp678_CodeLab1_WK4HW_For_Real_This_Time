@@ -12,10 +12,16 @@ public class BossHealth : MonoBehaviour {
 	public Image content;
 	public GameObject winText;
 	public GameObject endScore;
+	public GameObject extraText;
 	public bool itsOver = false; 
 	public KeyCode reset; 
+	public KeyCode record;
+	public bool canRecord = true;
 	GameObject dwayne;
 	GameObject canvas;
+	GameObject infoSaver;
+	InfoSaver infs;
+	Text extraWords;
 
 
 
@@ -23,6 +29,9 @@ public class BossHealth : MonoBehaviour {
 	void Start () {
 		dwayne = GameObject.Find ("Dwayne");
 		canvas = GameObject.Find ("Canvas");
+		infoSaver = GameObject.Find ("Info Saver");
+		infs = infoSaver.GetComponent<InfoSaver> ();
+		extraWords = extraText.GetComponent<Text> ();
 
 
 	}
@@ -56,6 +65,7 @@ public class BossHealth : MonoBehaviour {
 		{
 			winText.SetActive (true);
 			endScore.SetActive (true);
+			extraText.SetActive (true);
 			itsOver = true; 
 		}
 
@@ -65,10 +75,32 @@ public class BossHealth : MonoBehaviour {
 			{
 				Destroy (dwayne);
 				Destroy (canvas);
+				Destroy (infoSaver);
 				PlayerMovement.player = null;
 				UISaver.gameUI = null;
 				EditorSceneManager.LoadScene (0);
 			}
+
+			if (canRecord == true && itsOver == true) 
+			{
+				extraWords.text = "Press 'R' to restart.  Press 'C' to record your results.";
+				if (Input.GetKeyDown (record)) 
+				{
+					infs.record ();
+					canRecord = false;
+				}
+			}
+
+			if (canRecord == false)
+			{
+				extraWords.text = "Recorded! Press 'R' to restart.";
+			}
+				
 		}
+	}
+
+	public void recordFlipper ()
+	{
+		canRecord = true;
 	}
 }

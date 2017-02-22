@@ -83,6 +83,7 @@
 'Assets/Scripts/BladeBeamBehavior.cs'
 'Assets/Scripts/BossHealth.cs'
 'Assets/Scripts/DimensionHop.cs'
+'Assets/Scripts/InfoSaver.cs'
 'Assets/Scripts/MeterColor.cs'
 'Assets/Scripts/PlayerMovement.cs'
 'Assets/Scripts/PowerMeter.cs'
