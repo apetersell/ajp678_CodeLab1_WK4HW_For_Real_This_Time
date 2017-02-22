@@ -13,11 +13,16 @@ public class BossHealth : MonoBehaviour {
 	public GameObject winText;
 	public bool itsOver = false; 
 	public KeyCode reset; 
+	GameObject dwayne;
+	GameObject canvas;
 
 
 
 	// Use this for initialization
 	void Start () {
+		dwayne = GameObject.Find ("Dwayne");
+		canvas = GameObject.Find ("Canvas");
+
 
 	}
 
@@ -56,6 +61,10 @@ public class BossHealth : MonoBehaviour {
 		{
 			if (Input.GetKeyDown (reset)) 
 			{
+				Destroy (dwayne);
+				Destroy (canvas);
+				PlayerMovement.player = null;
+				UISaver.gameUI = null;
 				EditorSceneManager.LoadScene (0);
 			}
 		}

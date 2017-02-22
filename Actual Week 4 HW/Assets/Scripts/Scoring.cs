@@ -15,12 +15,6 @@ public class Scoring : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		if(foreverManager == null){
-			foreverManager = this;
-			DontDestroyOnLoad(this);
-		} else {
-			Destroy(gameObject);
-		}
 
 		numerals = GetComponent<Text> ();
 		bossHealth = GameObject.Find ("BossHealth");
