@@ -16,6 +16,7 @@ public class Scoring : MonoBehaviour {
 	Text finalScoreDisplay;
 
 	private const string PREF_BEST_TIME = "bestTimePref";
+	private const string PREF_PLAY_SESSION = "playSessionPref";
 
 
 
@@ -54,6 +55,24 @@ public class Scoring : MonoBehaviour {
 		}
 	}
 
+	private int playSession;
+
+	public int PlaySession
+	{
+		get 
+		{
+			playSession = PlayerPrefs.GetInt (PREF_PLAY_SESSION);
+			return playSession;
+		}
+
+		set 
+		{
+			playSession = value;
+			PlayerPrefs.SetInt (PREF_PLAY_SESSION, playSession);
+		}
+
+	}
+
 	// Use this for initialization
 	void Start () {
 
@@ -66,13 +85,16 @@ public class Scoring : MonoBehaviour {
 		{
 			BestTime = 99;
 		}
+
+		PlaySession++;
 		
 	} 
 	
 	// Update is called once per frame
 	void Update () {
 
-		Debug.Log ("Current Best Time: " + bestTime);
+		Debug.Log ("Current Best Time: " + BestTime);
+		Debug.Log ("Current Play Session: " + PlaySession);
 
 
 
