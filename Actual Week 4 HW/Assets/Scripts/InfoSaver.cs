@@ -11,15 +11,14 @@ public class InfoSaver : MonoBehaviour {
 	public string newBestTime; 
 	GameObject timer;
 	Scoring s;
-	StreamWriter sw;
+
 
 	public string fileName = "recordedTimes.txt";
+	string finalFilePath;
 
 	// Use this for initialization
 	void Start () {
-		string finalFilePath = Application.dataPath + "/" + fileName;
-
-		sw = new StreamWriter (finalFilePath, false); 
+		finalFilePath = Application.dataPath + "/" + fileName;
 
 
 		if (infosaver == null){
@@ -52,6 +51,8 @@ public class InfoSaver : MonoBehaviour {
 
 	public void record ()
 	{
+		StreamWriter sw = new StreamWriter (finalFilePath, true);   
+
 		sw.WriteLine ("Session: " + currentPlaySession + "  " + "Time: " + currentFinalTime + "  " + newBestTime);
 
 		sw.Close ();

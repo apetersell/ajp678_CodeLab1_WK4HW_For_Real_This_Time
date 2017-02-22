@@ -101,7 +101,8 @@ public class Scoring : MonoBehaviour {
 		if (bh.itsOver == false) 
 		timer++; 
 		{
-			if (timer >= 30) {
+			if (timer >= 30) 
+			{
 				timer = 0;
 				score++;
 			}
