@@ -11,7 +11,7 @@ public class BossHealth : MonoBehaviour {
 	public float damageAmount;
 	public Image content;
 	public GameObject winText;
-	public bool itsOver; 
+	public bool itsOver = false; 
 	public KeyCode reset; 
 
 
@@ -52,7 +52,7 @@ public class BossHealth : MonoBehaviour {
 			itsOver = true; 
 		}
 
-		if (itsOver = true) 
+		if (itsOver == true) 
 		{
 			if (Input.GetKeyDown (reset)) 
 			{
