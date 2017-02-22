@@ -11,6 +11,7 @@ public class BossHealth : MonoBehaviour {
 	public float damageAmount;
 	public Image content;
 	public GameObject winText;
+	public GameObject endScore;
 	public bool itsOver = false; 
 	public KeyCode reset; 
 	GameObject dwayne;
@@ -54,6 +55,7 @@ public class BossHealth : MonoBehaviour {
 		if (currentHealth <= 0) 
 		{
 			winText.SetActive (true);
+			endScore.SetActive (true);
 			itsOver = true; 
 		}
 

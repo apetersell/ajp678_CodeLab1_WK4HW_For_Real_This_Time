@@ -6,12 +6,32 @@ using UnityEngine.UI;
 public class Scoring : MonoBehaviour {
 	public float score; 
 	public float finalScore;
-	public static Scoring foreverManager;
 	Text numerals; 
 	GameObject bossHealth;
 	BossHealth bh;
 	public float timer; 
+	public GameObject endText;
+	public GameObject endScore;
+	Text finalWord;
+	Text finalScoreDisplay;
 
+	private const string PREF_BEST_TIME = "bestTimePref";
+
+	private int bestTime = 30;
+
+	public int BestTime 
+	{
+		get 
+		{
+			bestTime = PlayerPrefs.GetInt(PREF_BEST_TIME);
+			return bestTime; 
+		}
+		set 
+		{ 
+			bestTime = value;
+			PlayerPrefs.SetInt(PREF_BEST_TIME, bestTime);
+		}
+	}
 
 	// Use this for initialization
 	void Start () {
@@ -19,6 +39,8 @@ public class Scoring : MonoBehaviour {
 		numerals = GetComponent<Text> ();
 		bossHealth = GameObject.Find ("BossHealth");
 		bh = bossHealth.GetComponent<BossHealth> ();
+		finalWord = endText.GetComponent<Text> (); 
+		finalScoreDisplay = endScore.GetComponent<Text> ();
 		
 	} 
 	
@@ -39,6 +61,12 @@ public class Scoring : MonoBehaviour {
 		if (bh.itsOver) 
 		{
 			finalScore = score; 
+			finalScoreDisplay.text = finalScore.ToString ();
+			if (finalScore <= BestTime) {
+				finalWord.text = "You Win! NEW BEST TIME: ";
+			} else {
+					finalWord.text = "You Win! Your Time: ";
+			}
 		}
 		
 //		score = Time.time; 
