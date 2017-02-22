@@ -1,0 +1,17 @@
+/Users/andrewpetersell/Documents/Game Center/Semester 2/Code Lab 1/ajp678_CodeLab1_WK4HW/Week 4 HW/Temp/bin/Debug/UnityEngine.dll
+/Users/andrewpetersell/Documents/Game Center/Semester 2/Code Lab 1/ajp678_CodeLab1_WK4HW/Week 4 HW/Temp/bin/Debug/UnityEditor.dll
+/Users/andrewpetersell/Documents/Game Center/Semester 2/Code Lab 1/ajp678_CodeLab1_WK4HW/Week 4 HW/Temp/bin/Debug/UnityEngine.Analytics.dll
+/Users/andrewpetersell/Documents/Game Center/Semester 2/Code Lab 1/ajp678_CodeLab1_WK4HW/Week 4 HW/Temp/bin/Debug/UnityEngine.PlaymodeTestsRunner.dll
+/Users/andrewpetersell/Documents/Game Center/Semester 2/Code Lab 1/ajp678_CodeLab1_WK4HW/Week 4 HW/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/andrewpetersell/Documents/Game Center/Semester 2/Code Lab 1/ajp678_CodeLab1_WK4HW/Week 4 HW/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/andrewpetersell/Documents/Game Center/Semester 2/Code Lab 1/ajp678_CodeLab1_WK4HW/Week 4 HW/Temp/bin/Debug/UnityEngine.HoloLens.dll
+/Users/andrewpetersell/Documents/Game Center/Semester 2/Code Lab 1/ajp678_CodeLab1_WK4HW/Week 4 HW/Temp/bin/Debug/UnityEngine.VR.dll
+/Users/andrewpetersell/Documents/Game Center/Semester 2/Code Lab 1/ajp678_CodeLab1_WK4HW/Week 4 HW/Temp/bin/Debug/Mono.Cecil.dll
+/Users/andrewpetersell/Documents/Game Center/Semester 2/Code Lab 1/ajp678_CodeLab1_WK4HW/Week 4 HW/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/andrewpetersell/Documents/Game Center/Semester 2/Code Lab 1/ajp678_CodeLab1_WK4HW/Week 4 HW/Temp/bin/Debug/Unity.DataContract.dll
+/Users/andrewpetersell/Documents/Game Center/Semester 2/Code Lab 1/ajp678_CodeLab1_WK4HW/Week 4 HW/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/andrewpetersell/Documents/Game Center/Semester 2/Code Lab 1/ajp678_CodeLab1_WK4HW/Week 4 HW/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/andrewpetersell/Documents/Game Center/Semester 2/Code Lab 1/ajp678_CodeLab1_WK4HW/Week 4 HW/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/andrewpetersell/Documents/Game Center/Semester 2/Code Lab 1/ajp678_CodeLab1_WK4HW/Week 4 HW/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/andrewpetersell/Documents/Game Center/Semester 2/Code Lab 1/ajp678_CodeLab1_WK4HW/Week 4 HW/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/andrewpetersell/Documents/Game Center/Semester 2/Code Lab 1/ajp678_CodeLab1_WK4HW/Week 4 HW/Temp/bin/Debug/Mono.Cecil.Mdb.dll
